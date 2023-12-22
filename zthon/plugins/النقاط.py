@@ -31,7 +31,7 @@ ZelzalCoins_cmd = (
     "`.الجوكر`\n"
     "**⪼ لـ تجميـع النقـاط مـن بـوت الجوكـر ( @A_MAN9300BOT ) .. تلقـائيـاً ✓**\n\n"
     "`.الجنرال`\n"
-    "**⪼ لـ تجميـع النقـاط مـن بـوت الجنــرال ( @MARKTEBOT ) .. تلقـائيـاً ✓**\n\n"
+    "**⪼ لـ تجميـع النقـاط مـن بـوت الجنــرال ( @TTNBOT ) .. تلقـائيـاً ✓**\n\n"
     "`.المليون`\n"
     "**⪼ لـ تجميـع النقـاط مـن بـوت المليــون ( @qweqwe1919bot ) .. تلقـائيـاً ✓**\n\n\n"
     "`.سمسم`\n"
@@ -277,14 +277,14 @@ async def _(event):
 @zedub.zed_cmd(pattern="الجنرال(?: |$)(.*)")
 async def _(event):
     con = event.pattern_match.group(1).lower()
-    await event.edit("**⎉╎حسنـاً .. تأكـد من انك مشتـرك بـ قنـوات الاشتـراك الاجبـاري لتجنب الأخطـاء @MARKTEBOT**")
-    channel_entity = await zedub.get_entity('@MARKTEBOT')
-    await zedub.send_message('@MARKTEBOT', '/start')
+    await event.edit("**⎉╎حسنـاً .. تأكـد من انك مشتـرك بـ قنـوات الاشتـراك الاجبـاري لتجنب الأخطـاء @TTNBOT**")
+    channel_entity = await zedub.get_entity('@TTNBOT')
+    await zedub.send_message('@TTNBOT', '/start')
     await asyncio.sleep(3)
-    msg0 = await zedub.get_messages('@MARKTEBOT', limit=1)
+    msg0 = await zedub.get_messages('@TTNBOT', limit=1)
     await msg0[0].click(2)
     await asyncio.sleep(3)
-    msg1 = await zedub.get_messages('@MARKTEBOT', limit=1)
+    msg1 = await zedub.get_messages('@TTNBOT', limit=1)
     await msg1[0].click(0)
     chs = 1
     for i in range(100):
@@ -304,12 +304,12 @@ async def _(event):
             except:
                 bott = url.split('/')[-1]
                 await zedub(ImportChatInviteRequest(bott))
-            msg2 = await zedub.get_messages('@MARKTEBOT', limit=1)
+            msg2 = await zedub.get_messages('@TTNBOT', limit=1)
             await msg2[0].click(text='تحقق')
             chs += 1
             await event.edit(f"**⎉╎تم الاشتـراك في القنـاة  {chs} ...✓**")
         except: #Code by T.me/DAD_E3DAM
-            msg2 = await zedub.get_messages('@MARKTEBOT', limit=1)
+            msg2 = await zedub.get_messages('@TTNBOT', limit=1)
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**⎉╎القنـاة رقـم {chs} .. يمكـن تبنـدت**")
